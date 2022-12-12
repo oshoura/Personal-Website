@@ -11,6 +11,7 @@ const browserSync   = require('browser-sync').create();
 const autoprefixer  = require('gulp-autoprefixer');
 const jpgRecompress = require('imagemin-jpeg-recompress'); 
 const clean         = require('gulp-clean');
+var deploy      = require('gulp-gh-pages');
 
 
 // Paths
@@ -104,4 +105,11 @@ gulp.task('watch', function() {
     gulp.watch(paths.src.scss, gulp.series('sass'));
     gulp.watch(paths.src.js).on('change', browserSync.reload);
     gulp.watch(paths.src.html).on('change', browserSync.reload);
+});
+
+
+// Push build to gh-pages
+gulp.task('deploy', function () {
+  return gulp.src("./public_html/**/*")
+    .pipe(deploy())
 });

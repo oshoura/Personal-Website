@@ -11377,13 +11377,14 @@ pre .code {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
+  -webkit-justify-content: center;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: center;
   max-width: 180px;
 }
 
 .social-icons .social-link {
+  padding: 10px;
   font-size: 18px;
 }
 
