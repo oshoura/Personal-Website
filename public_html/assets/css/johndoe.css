@@ -18,7 +18,7 @@
   --indigo: #C45F90;
   --purple: #A16AE8;
   --pink: #FC8BC0;
-  --red: #F85C70;
+  --red: #060304;
   --orange: #FF8882;
   --yellow: #FAD02C;
   --green: #A3C14A;
@@ -50,8 +50,13 @@
   box-sizing: border-box;
 }
 
+.bold-link {
+  color: var(--dark);
+  font-weight: bold;
+}
+
 html {
-  font-family: sans-serif;
+  font-family: helvetica, sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -138,7 +143,7 @@ blockquote {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 small {
@@ -599,6 +604,7 @@ pre code {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
+  justify-content: center;
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
@@ -11426,7 +11432,7 @@ pre .code {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -weblit-transform: translate(-50%, -50%);
-  border: 10px solid white;
+  border: 1px solid white;
   -webkit-transition: .5s !important;
   transition: .5s !important;
   -weblit-transition: .5s !important;
@@ -11505,15 +11511,36 @@ pre .code {
 
 .header {
   position: relative;
-  height: 80vh;
+  height: 120vh;
   min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(100, 100, 100, 0.7)), url(../imgs/header-boston.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(100, 100, 100, 0.7)), url(../imgs/../imgs/header-boston.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
+}
+
+.head-icon{
+  width: 3em;
+  height: 3em;
+  
+}
+
+.header-intro {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  margin-left: 10px;
+  /* justify-content: center; */
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  /* flex: auto;
+  flex-direction: column;
+  justify-content: center; */
 }
 
 .header .container {
@@ -11540,8 +11567,7 @@ pre .code {
 .header .header-content .header-title {
   font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
-  line-height: .7;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: inherit;
 }
 
@@ -11557,9 +11583,9 @@ pre .code {
     height: 500px;
     min-height: 500px;
   }
-  .header .social-icons {
+  /* .header .social-icons {
     margin: auto;
-  }
+  } */
   .header .header-content {
     padding: 20px;
   }
@@ -11613,7 +11639,7 @@ pre .code {
 }
 
 .about-section .about-card {
-  padding: 60px;
+  padding: 75px;
   border-right: 1px solid #dee2e6;
 }
 
@@ -11652,6 +11678,9 @@ pre .code {
   }
 }
 
+.map {
+  background-color: var(--dark);
+}
 .contact .map {
   position: absolute;
   left: 0;
