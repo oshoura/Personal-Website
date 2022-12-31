@@ -32,10 +32,10 @@
             </div>
         </div>
     </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="910">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="ti-menu"></span>
             </button>
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -50,7 +50,7 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
-                    <img src="public_html/assets/imgs/omar-headshot.jpg" alt="profile picture" class="brand-img">
+                    <a href="#about"><img src="public_html/assets/imgs/omar-headshot.jpg" alt="profile picture" class="brand-img"></a>
                     <li class="brand-txt">
                         <h5 class="brand-title">Omar Shoura</h5>
                         <div class="brand-subtitle">Software Engineer | Student</div>
@@ -67,21 +67,22 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid" id="about">
+    <!-- About me section -->
+    <div class="container-fluid light-section" id="about">
         <div class="row about-section">
             <div class="col-lg-9 about-card">
                 <h3 class="font-weight-light">About me</h3>
                 <span class="line mb-3"></span>
                 <p class="mt-20">I'm a third year cs student at <strong>Northeastern University </strong>
                     studying Computer Science with a concentration in <strong>Artificial Intelligence</strong>. 
-                    Some of my favourite courses were/are <strong> Object Oriented Design, Programming Languages, Artifical Intelligence, and Machine Learning.</strong> Graduation: May 2024 </p>
+                    Some of my favorite courses were/are <strong> Object Oriented Design, Programming Languages, Artificial Intelligence, and Machine Learning.</strong> Graduation: May 2024 </p>
                 <!-- <h5 class="mb-3">First coop</h5> -->
                 <p class="mt-20">My first coop was at <strong>Liberty Mutual as a data scientist</strong>. Most of my work was in building <strong>MLOps tools in python</strong>
-                    to help speed up model deployements. I redesigned a modeling library to reduce memory usage, improve documentation and standardize interfaces by following
+                    to help speed up model deployments. I redesigned a modeling library to reduce memory usage, improve documentation and standardize interfaces by following
                     sklearn standards. I was able to make the library more user-friendly for the <strong>12+ data scientists</strong> who rely on it.
-                    I also <strong>designed a new library</strong>, with two other Data Sceintists, that has data pipelines and automation tools which <strong>sped up deployement of underwriting models from week and months to days.</strong>
+                    I also <strong>designed a new library</strong>, with two other Data scientists, that has data pipelines and automation tools which <strong>sped up deployment of underwriting models from week and months to days.</strong>
                     I presented these tools to external teams and received very positive feedback. Overall, I gained an understanding of how machine learning actually operates in the real world and the struggles engineers face. 
-                    I gained the skills, tools, and confidence that will undoudedtly help my career down the line while adding <strong>measarable value</strong> to the Liberty Mutual in my 6 months there</p>
+                    I gained the skills, tools, and confidence that will undoubtedly help my career down the line while adding <strong>measurable value</strong> to the Liberty Mutual in my 6 months there</p>
 
                 <p class="mt-20">An organization I got involved with as a <strong>software engineer</strong> was <strong>Generate: Student-led Product Development Studio.</strong>
                     There, I collaborated with 5 engineers to build a <strong>React and Django-based web app prototype in 4 months</strong>.
@@ -91,7 +92,7 @@
                     <a class="bold-link " href="https://www.instagram.com/corbaldist/?hl=en">Corbal Distribution</a>
                     who was ultimately very happy with the application when we presented with them. They are continuing development of it.</p>
                 <p class="mt-20">Otherwise, on campus, I've enjoyed being a <strong>teaching assistant</strong> for a couple of courses:
-                Fundementals of Computer Science, and Object Oriented Design. I found that I really enjoy teaching and don't mind spending
+                Fundamental of Computer Science, and Object Oriented Design. I found that I really enjoy teaching and don't mind spending
                 the extra time explaining a concept to a struggling student. I have 
                 <strong>led labs, exam review sessions, and hosted weekly office hours</strong> 
                 to fulfill my duties as a teaching assistant. I was also involved with <strong>Disrupt: The Fintech Initiative at Northeastern</strong>
@@ -483,7 +484,7 @@
     </section> -->
 
     <!-- Portfolio Section -->
-    <section class="section bg-custom-gray" id="portfolio">
+    <section class="section light-section" id="portfolio">
         <div class="col-lg-9 container">
             <h3 class="font-weight-light">My Project</h3>
             <span class="line mb-3"></span>
@@ -510,22 +511,22 @@
 
     
 
-    <div class="section contact" id="contact">
+    <div class="section" id="contact">
         <div id="map" class="map"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="contact-form-card">
-                        <h4 class="contact-title">Send a message</h4>
+                        <h4 class="contact-title">Send me a message!</h4>
                         <form id="myForm" action="">
                             <div class="form-group">
                                 <input class="form-control" id="name_inp" type="text" placeholder="Name *" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id="message_inp" id=" placeholder="Message *" rows="7" required></textarea>
+                                <textarea class="form-control" id="message_inp" placeholder="Message *" rows="7" required></textarea>
                             </div>
                             <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
+                                <button type="submit" class="form-control btn-primary" >Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -566,8 +567,8 @@
                             </div>
                         </div>
                         <ul class="social-icons pt-3" style="-webkit-justify-content: start; justify-content: start;">
-                            <li class="social-item"><a class="social-link text-dark" target="_blank" href="https://github.com/oshoura"><i class="ti-github" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" target="_blank" href="https://www.linkedin.com/in/oshoura/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-light" target="_blank" href="https://github.com/oshoura"><i class="ti-github" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-light" target="_blank" href="https://www.linkedin.com/in/oshoura/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
                         </ul> 
         
                     </div>
@@ -576,10 +577,10 @@
 
         </div>
     </div>
-    <footer class="footer py-3">
+    <footer class="py-3">
         <div class="container">
             <p class="small mb-0 text-light">
-                Created by Omar Shoura using <a href="http://devcrud.com" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">DevCRUD</span></a> template
+                Created by Omar Shoura using <a href="http://devcrud.com" target="_blank"><span title="Bootstrap 4 Themes and Dashboards"> DevCRUD </span></a> template
             </p>
         </div>
     </footer>
