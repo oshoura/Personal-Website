@@ -2749,7 +2749,7 @@ textarea.form-control {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
+  border-radius: 0.3rem;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -11511,7 +11511,7 @@ pre .code {
 
 .header {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   min-height: 600px;
   /* background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(100, 100, 100, 0.7)), url(../imgs/header-boston.jpg);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(100, 100, 100, 0.7)), url(../imgs/../imgs/header-boston.jpg); */
