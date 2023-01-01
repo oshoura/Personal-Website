@@ -1,6 +1,6 @@
 {
-  "name": "omar_shoura",
-  "version": "1.0.0",
+  "name": "John_Doe",
+  "version": "1.5.0",
   "description": "An elegant responsive bootstrap 4.x theme.",
   "main": "gulpfile.js",
   "author": "DevCRUD",
@@ -32,14 +32,5 @@
     "opera >= 23",
     "ios >= 7",
     "android >= 4"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oshoura/Personal-Website.git"
-  },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/oshoura/Personal-Website/issues"
-  },
-  "homepage": "https://github.com/oshoura/Personal-Website#readme"
+  ]
 }
