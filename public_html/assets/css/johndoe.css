@@ -2784,6 +2784,7 @@ fieldset:disabled a.btn {
   color: #FFF;
   background-color: rgb(22 55 118);
   background-color: rgb(22 55 118);
+  border-color: rgb(22 55 118);
 }
 
 .btn-primary:hover {
