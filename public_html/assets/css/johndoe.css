@@ -563,13 +563,6 @@ pre code {
   overflow-y: scroll;
 }
 
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 @media (min-width: 576px) {
   .container {
@@ -10827,7 +10820,7 @@ a.text-warning:hover, a.text-warning:focus {
 }
 
 .text-danger {
-  color: rgb(22 55 118) !important;
+  color: rgb(34, 92, 200) !important;
 }
 
 a.text-danger:hover, a.text-danger:focus {
@@ -10973,7 +10966,13 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 /* typography */
 p {
   /* font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1300 - 300))); */
@@ -11036,8 +11035,12 @@ p {
 }
 
 .w-lg {
-  min-width: 150px;
+  min-width: 70%;
+  height: 4rem;
+  line-height: 3rem;
+  font-size: 1.2rem;
 }
+
 
 .btn-component {
   position: fixed;
@@ -11052,7 +11055,7 @@ p {
 }
 
 .btn-component.affix {
-  right: -115px;
+  right: -85px;
 }
 
 .btn-component i {
@@ -11709,4 +11712,188 @@ pre .code {
   background: #F85C70;
   display: block;
   margin-top: 10px;
+}
+
+.col-twelve,
+.col-full {
+	width: 100%;
+}
+
+
+
+
+/* Resume */
+
+#resume {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+#resume .resume-header {
+	text-align: center;
+}
+.padded {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+
+#resume .resume-timeline {
+	max-width: 980px;
+}
+#resume .timeline-wrap {
+	position: relative;
+	margin-top: 1.5rem;
+	margin-bottom: 6rem;
+}
+#resume .timeline-wrap::before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: rgba(255,255,255,0.3);
+	position: absolute;
+	left: 35%;
+	top: 0;
+}
+#resume .timeline-block {
+	position: relative;
+	padding-top: 1.5rem;
+}
+#resume .timeline-ico {
+	height: 4em;
+	width: 4rem;
+	line-height: 3rem;
+	background: #313131;
+	border-radius: 50%;
+	text-align: center;
+	color: #FFFFFF;
+	position: absolute;
+	left: 35%;
+	top: .9rem;
+	margin-left: -2rem;
+}
+#resume .timeline-ico i {
+	position: relative;
+	left: .05rem;
+	top: .2rem;
+}
+
+#resume .timeline-header {
+	float: left;
+	width: 35%;
+	padding-right: 90px;
+	text-align: right;
+}
+/* #resume .timeline-header h5 {
+	margin-bottom: 1.8rem;
+}
+
+#resume h5{
+  margin-bottom: 1.8rem
+} */
+#resume .timeline-header p {
+	font-family: "poppins-regular", sans-serif;
+	font-size: 1rem;
+	color: #888888;
+}
+#resume .timeline-content {
+	margin-left: 35%;
+	padding-left: 60px;
+}
+#resume .timeline-content h5 {
+	position: relative;
+	padding-bottom: 1.8rem;
+}
+#resume .timeline-content h5::after {
+	content: "";
+	display: block;
+	height: 3px;
+	width: 50px;
+	background: rgba(255,255,255, 0.2);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+/**
+ * responsive:
+ * resume
+ * ------------------------------------------------------------------- 
+ */
+ @media only screen and (max-width:1024px) {
+	#resume .timeline-header {
+		padding-right: 50px;
+	}
+	#resume .timeline-header h5 {
+		font-size: 1.3rem;
+	}
+	#resume .timeline-header p {
+		font-size: 1rem;
+	}
+	#resume .timeline-content {
+		padding-left: 50px;
+	}
+}
+@media only screen and (max-width:768px) {
+  .col-twelve {
+    width: 90%;
+  }
+	#resume .timeline-wrap::before {
+		left: 2.4rem;
+	}
+	#resume .timeline-ico {
+		left: 2.4rem;
+	}
+	#resume .timeline-header {
+		float: none;
+		width: auto;
+		padding-right: 15px;
+		text-align: left;
+	}
+	#resume .timeline-header h5 {
+		font-size: 1.3rem;
+	}
+  #resume h4{
+		font-size: 1.8rem;
+	}
+	#resume .timeline-header p {
+		font-size: 1rem;
+		margin-bottom: 1.3rem;
+	}
+	#resume .timeline-content {
+		margin: 0;
+	}
+	#resume .timeline-content h5 {
+		padding-bottom: 0;
+		padding-top: 2.1rem;
+		margin-bottom: .6rem;
+		font-size: 1.3rem;
+	}
+	#resume .timeline-content h5::after {
+		bottom: auto;
+		top: 0;
+	}
+	#resume .timeline-header, #resume .timeline-content {
+		padding-left: 7rem;
+	}
+}
+@media only screen and (max-width:480px) {
+	#resume .resume-header h4 {
+		font-size: 2.2rem;
+	}
+	#resume .timeline-wrap::before {
+		left: 1.8rem;
+	}
+	#resume .timeline-ico {
+		height: 3.6rem;
+		width: 3.6rem;
+		line-height: 3.6rem;
+		left: 1.8rem;
+		margin-left: -1.8rem;
+		font-size: 1.5rem;
+	}
+	#resume .timeline-header, #resume .timeline-content {
+		padding-left: 5.5rem;
+	}
 }

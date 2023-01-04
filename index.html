@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="public_html/assets/css/johndoe.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="#home" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-arrow-up"></i> Scroll up</a>
+    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-arrow-up"></i> Scroll up</a>
+    <!-- <a href="#home" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-arrow-up"></i> Scroll up</a> -->
     <header class="header">
         <div class="container"> 
             <div class="header-content">
@@ -68,10 +69,10 @@
         </div>
     </nav>
     <!-- About me section -->
-    <div class="container-fluid light-section" id="about">
+    <section class="container-fluid light-section section" id="about">
         <div class="row about-section">
             <div class="col-lg-9 about-card">
-                <h3 class="font-weight-light">About me</h3>
+                <h2>About <span class="text-danger">Me</span></h2>
                 <span class="line mb-3"></span>
                 <p class="mt-20">I'm a third year cs student at <strong>Northeastern University </strong>
                     studying Computer Science with a concentration in <strong>Artificial Intelligence</strong>. 
@@ -105,7 +106,6 @@
                 <p class="mt-20">In the summer of 2023, I will join <strong>Capital One as a software engineering intern</strong>
                      at their headquarters in McLean, VA. I am extremely excited for this opportunity and am looking forward to work on their cloud tools.
                     I'm currently looking for a Fall 2023 coop from August till December. Please reach out to me with any opportunities or to just chat!</p>
-                    <!-- <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button> -->
             </div>
             <!-- <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
@@ -154,138 +154,173 @@
                 </div>
             </div> -->
         </div>
-    </div>
+    </section>
 
     <!--Resume Section-->
     <section class="section" id="resume">
         <div class="col-lg-9 container">
-            <h3 class="font-weight-light">My Resume</h3>
-            <span class="line mb-3"></span>
-            <a class="btn btn-primary" style="margin-bottom:20px;" href="./public_html/assets/Resume 2022-Shoura.pdf" target="_blank"><i class="ti-printer pr-2"></i>Download Resume</a>
-            <iframe src="./public_html/assets/Resume 2022-Shoura.pdf#toolbar=0" width="100%" height="1000px">
-            </iframe>
-            <!-- <div class="row">
-                <div class="row-md-6 row-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Professional Experience</h4>
-                                <span class="line"></span>  
+            <h2>My <span class="text-danger">Resume</span></h2>
+            <div class="row resume-timeline">     
+                <div class="col-twelve">
+
+                    <!-- Work Experience
+                    -------------------------------------------- -->
+                    <div class="col-twelve resume-header padded">
+
+                        <h4>Work Experience</h4>
+         
+                    </div> <!-- /resume-header -->
+                    
+                    <div class="timeline-wrap">
+                        <!-- capital one -->
+                        <div class="timeline-block">
+                            <img class="timeline-ico" src="public_html/assets/imgs/resume_logos/capital_one.png" class="img-fluid" alt="Capital One Logo">
+                       
+                            <div class="timeline-header">
+                                <h5>Software Engineer Intern</h5>
+                                <p>[Incoming] May 2023 - Jul 2023</p>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <span  style="text-align:right;">
-                                    <h6 class="title text-danger">Capital One</h6>
-                                </span>
-                                <h6 class="title" >2017 - Present</h6>
+     
+                            <div class="timeline-content">
+                                <h5>Capital One</h5>
+                                <p>Incoming 2023 software engineering intern working on their cloud tools</p>
                             </div>
-                            <P>UX Developer</P>
-                            <ul>
-                                <li class="subtitle"> test</li>
-                            </ul>
-                            <hr>
-                            <h6 class="title text-danger">2016 - 2017</h6>
-                            <P>Front-end Developer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                            <hr>
-                            <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>UX Designer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Education</h4>
-                                <span class="line"></span>  
+     
+                        </div>  <!-- /timeline-block -->
+
+                        <!-- liberty mutual -->
+                        <div class="timeline-block">
+     
+                            <img class="timeline-ico" src="public_html/assets/imgs/resume_logos/liberty_mutual.png" class="img-fluid" alt="Liberty Mutual Logo">
+
+                            <div class="timeline-header">
+                                <h5>Machine Learning Engineer Coop</h5>
+                                <p>Jul 2022 - Dec 2022</p>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2017 - Present</h6>
-                            <P>B.E Computer Engineering</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.</P>
-                            <hr>
-                            <h6 class="title text-danger">2016 - 2017</h6>
-                            <P>Diploma in Computer Engineering</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, id officiis quas placeat quia voluptas dolorum rem animi nostrum quae.aliquid repudiandae saepe!.</P>
-                            <hr>
-                            <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>High School Degree</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Skills</h4>
-                                <span class="line"></span>  
+     
+                            <div class="timeline-content">
+                                <h5>Office of Data Science At Liberty Mutual Insurance</h5>
+                                <p>• Redesigned an insurance modeling library in python, to reduce memory usage, standardize interfaces by
+                                    following Sklearn standards, and improve documentation consistency; 12+ data scientists use library</p>
+                                <p>
+                                    • Designed configurable, robust, and well-tested data transformers for underwriting models that sped up
+                                    deployment from an average of 3 months to only 2 weeks; presented tools to external teams
+                                </p>
+                                <p> • Explored new orchestration tool to aggregate 3 models and presented findings; currently deployed and used</p>
                             </div>
-                        </div>
-                        <div class="card-body pb-2">
-                           <h6>hTL5 &amp; CSS3</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+     
+                        </div>  <!-- /timeline-block -->
+                        
+                        <!-- Generate-->
+                        <div class="timeline-block">
+     
+                            <img class="timeline-ico" src="public_html/assets/imgs/resume_logos/Generate.png" class="img-fluid" alt="Generate Development Studio Logo">
+     
+                            <div class="timeline-header">
+                                <h5>Software Engineer</h5>
+                                <p>Dec 2021 - Apr 2022</p>
                             </div>
-                            <h6>JavaScript</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+     
+                            <div class="timeline-content">
+                                <h5>Generate: Student led Product Development Studio</h5>
+                                <p>• Built modern user interface for a home screen and explore page in React closely following Figma designs</p>
+                                <p>• Set up authentication process with Django back-end, Spotify user integration, Redux for state management</p>
+                                <p>• Collaborated with 11 engineers to build React and Django based prototype web app in 4 months for customer </p>
                             </div>
-                            <h6>PHP</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+     
+                        </div> <!-- /timeline-block -->
+
+                        <div class="timeline-block">
+     
+                            <img class="timeline-ico" src="public_html/assets/imgs/resume_logos/khoury_college.png" class="img-fluid" alt="Khoury College of Computer Science Logo">
+     
+                            <div class="timeline-header">
+                                <h5>Teaching Assistant for Fundamentals of Computer Science 1 and Object-Oriented Design</h5>
+                                <p>Sep 2021 - Jun 2022</p>
                             </div>
-                            <h6>SQL</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+     
+                            <div class="timeline-content">
+                                <h5>Khoury College of Computer Science </h5>
+                                <p>• Led labs with 30+ students to answer questions and teach Functional Programming & OOD paradigms</p>
+                                <p>• Planned review session with 200+ students attending, working closely with professor to prepare material</p>
+                                <p>• Held office hours to provide one-on-one support, understanding and helping students with unfamiliar code </p>
                             </div>
-                            <h6>Laborum</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+     
+                        </div> <!-- /timeline-block -->
+                        
+                    </div> <!-- /timeline-wrap -->  
+
+                    <!--------------------------------------------
+                         Education Section
+                    ---------------------------------------------->
+                    <div class="col-twelve resume-header padded">
+
+                        <h4>Education</h4>
+         
+                    </div> <!-- /resume-header -->                    
+                    <div class="timeline-wrap">
+                        <!-- Northeastern -->
+                        <div class="timeline-block">
+                            <img class="timeline-ico" src="public_html/assets/imgs/resume_logos/Northeastern.png" class="img-fluid" alt="Northeastern University Logo">
+                       
+                            <div class="timeline-header">
+                                <h5>Bachelor's of Computer Science</h5>
+                                <p>Sept 2020 - Apr 2024</p>
+                                <p style="margin-top:-0.7rem">Boston, MA</p>
                             </div>
-                            <h6>Tempora</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+     
+                            <div class="timeline-content">
+                                <h5>Northeastern University</h5>
+                                <p><strong>GPA: 3.9 / 4.0</strong>- Dean's List</p>
+                                <p><strong>Coursework: </strong>Artificial Intelligence, Machine Learning I, Software Engineering, Programming Languages,
+                                    Foundation of Data Science, Object-Oriented Design, Algorithms and Data Structures</p>
+                                <p><strong>Involvements: </strong>Vice President at Islamic Society of Northeastern, 
+                                    <br>Tech Team Programmer at Disrupt: Fintech Organization at Northeastern,
+                                    <br>Arab Student Association: Country Ambassador</p>
+                                    
                             </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Languages</h4>
-                                <span class="line"></span>  
+     
+                        </div>  <!-- /timeline-block -->
+
+                        <!-- Newton North -->
+                        <div class="timeline-block">
+     
+                            <img class="timeline-ico" src="public_html/assets/imgs/resume_logos/Newton_north.png" class="img-fluid" alt="Newton North Logo">
+
+                            <div class="timeline-header">
+                                <h5>High School</h5>
+                                <p>Sept 2016 - June 2020</p>
+                                <p style="margin-top:-0.7rem">Newton, MA</p>
                             </div>
-                        </div>
-                        <div class="card-body pb-2">
-                           <h6>English</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+     
+                            <div class="timeline-content">
+                                <h5>Newton North High School</h5>
+                                <p><strong>GPA: 4.5/5.0</strong>- High Honors</p>
+                                <p><strong>Coursework: </strong>AP Statistics, AP Calculus, AP Chemistry, French V, Arabic, Middle Eastern History, TA for Computer Science
+                                <p><strong>Involvements: </strong>Wrestling, Soccer, Robotics, Arab Student Association
                             </div>
-                            <h6>French</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Spanish</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+     
+                        </div>  <!-- /timeline-block -->
+                        
+     
+                    </div> <!-- /timeline-wrap -->   			
+     
+                </div> <!-- /col-twelve -->
+                
+            </div> <!-- /resume-timeline -->
+            <div class="container text-center py-5"style="padding-top: 0rem !important">
+                <!-- <h4 class="text-light mb-3 font-weight-normal">Download My Resume</h4> -->
+                <a class="btn btn-primary w-lg" href="./public_html/assets/Resume 2022-Shoura.pdf" target="_blank">Download My Resume</a>
+    
+            </div>
+        </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
     <section class="section light-section" id="portfolio">
         <div class="col-lg-9 container">
-            <h3 class="font-weight-light">My Project</h3>
-            <span class="line mb-3"></span>
+            <h2 class="padded">My <span class="text-danger">Projects</span></h2>
             <h5 class="mb-3">Refer to my <a href="https://github.com/oshoura" target="_blank">Github</a> for the most up to date information.</h5>
             <div class="portfolio">
                 <div class="portfolio-container"> 
@@ -364,7 +399,10 @@
             </div>  
         </div>            
     </section>
-    
+    <!-- <section class="py-5">
+        
+    </section> -->
+
     <!-- contact me section -->
     <div class="section" id="contact">
         <div id="map" class="map"></div>
@@ -425,6 +463,7 @@
                             <li class="social-item"><a class="social-link text-light" target="_blank" href="https://github.com/oshoura"><i class="ti-github" aria-hidden="true"></i></a></li>
                             <li class="social-item"><a class="social-link text-light" target="_blank" href="https://www.linkedin.com/in/oshoura/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
                         </ul> 
+                        
         
                     </div>
                 </div>
@@ -453,8 +492,8 @@
     <!-- JohnDoe js -->
     <script src="public_html/assets/js/johndoe.js"></script>
 
+
     <!-- custom js -->
     <script src="public_html/assets/js/scripts.js"></script>
-
 </body>
 </html>
