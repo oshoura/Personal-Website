@@ -35,6 +35,8 @@
   --danger: #F85C70;
   --light: #f8f9fa;
   --dark: #343a40;
+  --main-blue: rgb(22 55 118);
+  --text-blue: rgb(34, 92, 200);
   --bgd-dark: rgb(12 12 12);
   --bgd-dark-secondary: rgb(32 32 32);
   --light-text: rgb(211 211 211);
@@ -43,6 +45,44 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+  --gray0: #f8f8f8;
+  --gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #2a2e35;
+  --gray6: #12181b;
+  --nav-width: 4em;
+  --font-body: "sofia-pro", sans-serif;
+  --font-head: "sofia-pro", sans-serif;
+  --font-code: "attribute-mono", monospace;
+  --font-size: 20px;
+  --max-width-bp: 768px;
+  --orange-pink: linear-gradient(
+    to bottom right,
+    var(--orange-light),
+    var(--orange-dark) 85%
+  );
+  --green-grad: linear-gradient(
+    to bottom right,
+    var(--green-light),
+    var(--green-dark) 85%
+  );
+  --background: var(--gray6);
+  --text-color: var(--gray2);
+  --h-color: #fff;
+  --nav-shadow: 4px 0 10px -3px #010101;
+  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.38);
+  --toc-shadow: rgba(0, 0, 0, 0.7) 0px 10px 20px 0px;
+  --nav-bg: var(--gray5);
+  --tag-bg: var(--gray2);
+  --code-bg: #22262f;
+  --card-bg: var(--gray5);
+  --overlay-bg: rgba(0, 0, 0, 0.9);
+  --h-border: 2px dashed var(--nav-bg);
+  --nav-border: 2px dashed var(--text-color);
+  --card-radius: 0.25em;
+  transition: all 0.3s ease;
   --font-family-sans-serif: "Source Sans Pro", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -78,6 +118,11 @@ body {
   color:var(--light-text);
   text-align: left;
   background-color: var(--bgd-dark);
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
 
 [tabindex="-1"]:focus {
@@ -2775,8 +2820,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #FFF;
-  background-color: rgb(22 55 118);
-  background-color: rgb(22 55 118);
+  background-color: var(--text-blue);
+  /* background-color: rgb(22 55 118); */
   border-color: rgb(22 55 118);
 }
 
@@ -11632,6 +11677,7 @@ pre .code {
 
 .section {
   padding: 80px 0;
+  padding-left: 10px;
 }
 
 .light-section {
@@ -11641,6 +11687,7 @@ pre .code {
 
 .about-section .about-card {
   padding: 75px;
+  max-width: 1500px;
   border-right: 1px solid #dee2e6;
 }
 
@@ -11727,6 +11774,7 @@ pre .code {
 #resume {
 	padding-top: 8rem;
 	padding-bottom: 8rem;
+  /* max-width: 1500px; */
 }
 
 #resume .resume-header {
@@ -11740,6 +11788,8 @@ pre .code {
 
 #resume .resume-timeline {
 	max-width: 980px;
+  margin-right: auto;
+    margin-left: auto;
 }
 #resume .timeline-wrap {
 	position: relative;
@@ -11897,3 +11947,62 @@ pre .code {
 		padding-left: 5.5rem;
 	}
 }
+
+/* Skills Section */
+
+
+.skills-section {
+  margin: 100px;
+  margin-top: 20px;
+  max-width: 1500px;
+ 
+}
+
+@media (min-width:1600px) {
+  .skills-section {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width:1024px) {
+  .skills-card{
+    padding: 20px;
+  }
+}
+@media (max-width:768px) {
+  .skills-section{
+    margin: 20px;
+  }
+  
+}
+
+@media (max-width:480px) {
+  .skills-section{
+    margin: 10px;
+  }
+}
+
+/* Tags */
+
+
+.tag {
+  display: inline-block;
+  border-radius: 3px;
+  padding: .2em 1em .3em;
+  border-radius: 2px;
+  background:var(--text-blue);
+  color: white;
+  font-weight: 600;
+  margin: .25em .1em;
+  font-size: 1rem;
+  border-radius: 4px
+}
+
+.tag-secondary {
+  background: none;
+  border: 0.1rem solid var(--text-blue);
+  color: var(--text-blue)
+}
+
+

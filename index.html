@@ -12,14 +12,14 @@
 	<link rel="stylesheet" href="public_html/assets/css/johndoe.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-arrow-up"></i> Scroll up</a>
+    <a href="#home" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-arrow-up"></i> Scroll up</a>
     <!-- <a href="#home" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-arrow-up"></i> Scroll up</a> -->
     <header class="header">
         <div class="container"> 
             <div class="header-content">
                 <div class="header-intro">
                     <h4 class="header-subtitle" >Hi</h4>
-                    <img src="public_html/assets/imgs/hand-wave.png" class="head-icon"></img>
+                    <img src="public_html/assets/imgs/hand-wave.png" class="head-icon"/>
                     <h4 class="header-subtitle" >I'm</h4>
                 </div>
                 <h1 class="header-title">Omar Shoura</h1>
@@ -40,9 +40,6 @@
             </button>
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <!-- <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li> -->
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About</a>
                     </li>
@@ -74,7 +71,7 @@
             <div class="col-lg-9 about-card">
                 <h2>About <span class="text-danger">Me</span></h2>
                 <span class="line mb-3"></span>
-                <p class="mt-20">I'm a third year cs student at <strong>Northeastern University </strong>
+                <p class="mt-20">I'm a third year CS student at <strong>Northeastern University </strong>
                     studying Computer Science with a concentration in <strong>Artificial Intelligence</strong>. 
                     Some of my favorite courses were/are <strong> Object Oriented Design, Programming Languages, Artificial Intelligence, and Machine Learning.</strong> Graduation: May 2024 </p>
                 <h5 class="mb-3">First coop - Machine Learning at Liberty Mutual</h5>
@@ -93,7 +90,7 @@
                     <a class="bold-link " href="https://www.instagram.com/corbaldist/?hl=en">Corbal Distribution</a>
                     who was ultimately very happy with the application when we presented with them. They are continuing development of it.</p>
                 <h5 class="mb-3">Getting Involved on Campus</h5>
-                <p class="mt-20">Otherwise, on campus, I've enjoyed being a <strong>teaching assistant</strong> for a couple of courses:
+                <p class="mt-20">On campus, I've enjoyed being a <strong>teaching assistant</strong> for a couple of courses:
                 Fundamental of Computer Science, and Object Oriented Design. I found that I really enjoy teaching and don't mind spending
                 the extra time explaining a concept to a struggling student. I have 
                 <strong>led labs, exam review sessions, and hosted weekly office hours</strong> 
@@ -105,7 +102,7 @@
                 <h5 class="mb-3">Looking To The Future</h5>
                 <p class="mt-20">In the summer of 2023, I will join <strong>Capital One as a software engineering intern</strong>
                      at their headquarters in McLean, VA. I am extremely excited for this opportunity and am looking forward to work on their cloud tools.
-                    I'm currently looking for a Fall 2023 coop from August till December. Please reach out to me with any opportunities or to just chat!</p>
+                    I'm currently looking for a Fall 2023 coop from August untill December. Please reach out to me with any opportunities or to just chat!</p>
             </div>
             <!-- <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
@@ -302,18 +299,66 @@
      
                         </div>  <!-- /timeline-block -->
                         
-     
-                    </div> <!-- /timeline-wrap -->   			
-     
+                    </div> <!-- /timeline-wrap -->   	
+
                 </div> <!-- /col-twelve -->
                 
+                <div class="col-twelve resume-header padded">
+        
+                    <h4>Skills</h4>
+        
+                </div> <!-- /resume-header -->  
             </div> <!-- /resume-timeline -->
-            <div class="container text-center py-5"style="padding-top: 0rem !important">
-                <!-- <h4 class="text-light mb-3 font-weight-normal">Download My Resume</h4> -->
-                <a class="btn btn-primary w-lg" href="./public_html/assets/Resume 2022-Shoura.pdf" target="_blank">Download My Resume</a>
-    
-            </div>
         </div>
+      
+        <div class="row skills-section">
+            <div class="col-lg-4 skills-card">
+                <h5 class="font-weight-light mb-3">Languages</h5>
+                <a><span class="tag">Python</span></a>
+                <a><span class="tag">Java</span></a>
+                <a><span class="tag">JavaScript</span></a>
+                <a><span class="tag">HTML</span></a>
+                <a><span class="tag">CSS</span></a>
+                <a><span class="tag">Racket</span></a>
+                <a><span class="tag tag-secondary">C++</span></a>
+                <a><span class="tag tag-secondary">Swift</span></a>
+                <a><span class="tag tag-secondary">R</span></a>
+                <a><span class="tag tag-secondary">MATLAB</span></a>
+            </div>
+            <div class="col-lg-4 skills-card">
+                <h5 class="font-weight-light mb-3">Frameworks</h5>
+                <a><span class="tag">Pandas</span></a>
+                <a><span class="tag">NumPy</span></a>
+                <a><span class="tag">Sklearn</span></a>
+                <a><span class="tag">Pytest</span></a>
+                <a><span class="tag">OpenCV</span></a>
+                <a><span class="tag">Streamlit</span></a>
+                <a><span class="tag">JUnit</span></a>
+                <a><span class="tag tag-secondary">Node.js</span></a>
+                <a><span class="tag tag-secondary">React.js</span></a>
+                <a><span class="tag tag-secondary">React Native</span></a>
+                <a><span class="tag tag-secondary">Redux</span></a>
+            </div>
+            <div class="col-lg-4 skills-card">
+                <h5 class="font-weight-light mb-3">Tools</h5>
+                <a><span class="tag">MLflow</span></a>
+                <a><span class="tag">Databricks</span></a>
+                <a><span class="tag">DataDog</span></a>
+                <a><span class="tag">AWS</span></a>
+                <a><span class="tag">RESTful API's</span></a>
+                <a><span class="tag">Git</span></a>
+                <a><span class="tag tag-secondary">SQL</span></a>
+                <a><span class="tag">VIM</span></a>
+                <a><span class="tag tag-secondary">Bash</span></a>
+                <a><span class="tag">XCode</span></a>
+                <a><span class="tag">Eclipse</span></a>
+                <a><span class="tag">VSCode</span></a>
+            </div>
+        </div>   
+        <div class="container text-center py-5"style="padding-top: 0rem !important">
+            <!-- <h4 class="text-light mb-3 font-weight-normal">Download My Resume</h4> -->
+            <a class="btn btn-primary w-lg" href="./public_html/assets/Resume 2022-Shoura.pdf" target="_blank">Download My Resume</a>
+
         </div>
     </section>
 
@@ -372,7 +417,7 @@
                             <a href="https://github.com/oshoura/Predict-Language" target="_blank">
                                 <div class="content-holder">
                                     <div class="text-holder">
-                                        <h6 class="title">A language detection model</h6>
+                                        <h6 class="title">A Language Detection Model</h6>
                                         <p class="subtitle">A KNN classification model using cosine-similarity to detect the language of a given document.
                                             <strong>python, KNN</strong> </p>
                                     </div>
