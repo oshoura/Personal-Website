@@ -11089,7 +11089,7 @@ p {
 
 .btn-component {
   position: fixed;
-  top: 140px;
+  top: 80%;
   right: -225px;
   z-index: 9999;
   -webkit-transition: .4s;
@@ -11100,7 +11100,7 @@ p {
 }
 
 .btn-component.affix {
-  right: -85px;
+  right: -80px;
 }
 
 .btn-component i {
@@ -11713,6 +11713,19 @@ pre .code {
   padding: 40px 0;
 }
 
+.contact-form-card {
+  background-color: rgb(234 234 234);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 1024px){
+  .contact-form-card {
+    margin-bottom: 3rem;
+  }
+}
+
 @media (max-width: 991.98px) {
   .contact {
     padding: 300px 0 0;
@@ -11737,17 +11750,14 @@ pre .code {
   height: 100%;
 }
 
-.contact .contact-form-card,
-.contact .contact-info-card {
-  padding: 35px;
-  background: #fff;
-  min-height: 500px;
-}
 
 .contact .contact-info-card {
   padding-right: 20px;
 }
 
+/* .contact-title {
+  color: rgb(51 71 91);
+} */
 .contact .contact-title {
   margin-bottom: 30px;
 }
@@ -11759,6 +11769,7 @@ pre .code {
   background: #F85C70;
   display: block;
   margin-top: 10px;
+  color: rgb(51 71 91);
 }
 
 .col-twelve,
