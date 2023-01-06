@@ -5396,39 +5396,7 @@ a.badge-dark:focus {
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
-@media (prefers-reduced-motion: reduce) {
-  .progress-bar {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-.progress-bar-striped {
-  background-image: -webkit-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.15) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.15) 50%,
-    rgba(255, 255, 255, 0.15) 75%,
-    transparent 75%,
-    transparent
-  );
-  background-image: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.15) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.15) 50%,
-    rgba(255, 255, 255, 0.15) 75%,
-    transparent 75%,
-    transparent
-  );
-  background-size: 0.3rem 0.3rem;
-}
-.progress-bar-animated {
-  -webkit-animation: progress-bar-stripes 1s linear infinite;
-  animation: progress-bar-stripes 1s linear infinite;
-}
+
 @media (prefers-reduced-motion: reduce) {
   .progress-bar-animated {
     -webkit-animation: none;
@@ -10652,12 +10620,12 @@ pre code {
   color: rgb(0 0 0 / 0%);
   background-image: linear-gradient(
     to right,
-    rgb(248 171 94) 0,
-    rgb(243 105 97) 20%,
-    rgb(161 118 200) 40%,
-    rgb(117 155 235) 60%,
-    rgb(101 190 179) 80%,
-    rgb(112 219 150) 100%
+    var(--text-blue) 0,
+    var(--main-blue) 20%,
+    rgb(161 118 200) 70%,
+    var(--indigo) 100%
+    /* var(--danger) 100% */
+    /* var(--indigo) 100% */
   );
   -webkit-background-clip: text;
   margin-left: auto;
