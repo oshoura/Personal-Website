@@ -4635,8 +4635,8 @@ input[type=submit].btn-block {
   color: rgba(211,211,211,.9)
 }
 .navbar-light .navbar-toggler {
-  color: rgba(211,211,211,.8);
-  border-color: rgba(211,211,211,.1)
+  color: rgb(255 255 255 / 80%);
+  font-size: 1.5rem;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
@@ -8026,6 +8026,12 @@ button.bg-dark:hover {
     z-index: 1020
   }
 }
+@media (max-width: 990px) {
+  .navbar {
+    position:fixed;
+    width:100%
+  }
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -10579,8 +10585,9 @@ pre code {
   color: #fff
 }
 .head-icon {
-  width: 3em;
-  height: 3em
+  width: calc(20px + (45 - 20) * ((100vw - 300px) / (1600 - 300))*.8);
+  height: calc(20px + (45 - 20) * ((100vw - 300px) / (1600 - 300))*.8);
+  margin: 0.2rem 0.2rem 0
 }
 .header-intro {
   display: -webkit-box;
@@ -10608,7 +10615,7 @@ pre code {
   color: #fff;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
+  margin-top: 10rem;
 }
 .header .header-content .header-subtitle {
   font-weight: 200;
@@ -10705,6 +10712,10 @@ pre code {
 @media (max-width:1024px) {
   .contact-form-card {
     margin-bottom: 3rem
+  }
+
+  .section {
+    padding: 4rem 0px
   }
 }
 @media (max-width:991.98px) {
@@ -10831,6 +10842,9 @@ pre code {
   bottom: 0
 }
 @media only screen and (max-width:1024px) {
+  /* #resume {
+    padding: 4rem 0 4rem
+  } */
   #resume .timeline-header {
     padding-right: 50px
   }
