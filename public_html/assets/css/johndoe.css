@@ -10481,8 +10481,8 @@ pre code {
   color: #f85c70
 }
 .navbar {
-  box-shadow: 2px 7px 10px rgb(111 111 111 / 18%);
-  -webkit-box-shadow: 2px 7px 10px rgb(111 111 111 / 18%)
+  box-shadow: 2px 7px 10px rgb(0 0 0 / 20%);
+  -webkit-box-shadow: 2px 7px 10px rgb(0 0 0 / 20%)
 }
 .navbar .navbar-nav:first-child .nav-item:first-child .nav-link {
   padding-left: 0
@@ -10875,10 +10875,10 @@ pre code {
     text-align: left
   }
   #resume .timeline-header h5 {
-    font-size: 1.3rem
+    font-size: 1.2rem
   }
   #resume h4 {
-    font-size: 1.8rem
+    font-size: 1.5rem
   }
   #resume .timeline-header p {
     font-size: 1rem;
@@ -10891,7 +10891,7 @@ pre code {
     padding-bottom: 0;
     padding-top: 2.1rem;
     margin-bottom: .6rem;
-    font-size: 1.3rem
+    font-size: 1.2rem
   }
   #resume .timeline-content h5::after {
     bottom: auto;
