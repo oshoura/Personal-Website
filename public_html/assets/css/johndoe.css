@@ -10605,14 +10605,9 @@ pre code {
   display: flex;
 }
 .header .header-content {
-  /* width: 100%;
-  position: absolute;
-  left: 20%;
-  top: 45%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); */
-  color: #fff;
+  color: rgb(0 0 0 / 0%);
+  background-image: linear-gradient(to right,rgb(248 171 94) 0,rgb(243 105 97) 20%,rgb(161 118 200) 40%,rgb(117 155 235) 60%,rgb(101 190 179) 80%,rgb(112 219 150) 100%);
+  -webkit-background-clip: text;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10rem;
@@ -10625,7 +10620,7 @@ pre code {
   font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 700;
   margin-bottom: 15px;
-  color: inherit
+  /* color: inherit */
 }
 .header .header-content .header-mono {
   letter-spacing: 5px;
@@ -10645,8 +10640,8 @@ pre code {
 .header-title {
   font-size: 2.4rem;
   font-weight: 700;
-  opacity: .8;
-  color: #212529
+  /* opacity: .8; */
+  /* color: #212529 */
 }
 .header-mini {
   min-height: 24rem;
