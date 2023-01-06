@@ -17,6 +17,7 @@ Although, I don't consider myself a front end engineer, I do believe in the impo
 - css
 - bootstrap
 - Github pages
+- domain hosting
 
 I will continue to do more web development projects if the opportunity arises.
 
