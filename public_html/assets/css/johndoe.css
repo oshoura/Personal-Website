@@ -10594,17 +10594,21 @@ pre code {
 }
 .header .container {
   position: relative;
-  height: 100%
+  height: 100%;
+  display: flex;
 }
 .header .header-content {
-  width: 100%;
+  /* width: 100%;
   position: absolute;
   left: 20%;
   top: 45%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: #fff
+  transform: translateY(-50%); */
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
 }
 .header .header-content .header-subtitle {
   font-weight: 200;
