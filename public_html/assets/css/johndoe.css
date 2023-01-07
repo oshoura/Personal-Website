@@ -2657,9 +2657,9 @@ fieldset:disabled a.btn {
   border-color: rgb(22 55 118);
 }
 .btn-primary:hover {
-  color: var(--bgd-dark);
-  background-color: #fffcfc;
-  border-color: #fff;
+  color: #fff;
+  background-color: var(--main-blue);
+  border-color:  var(--main-blue);
 }
 .btn-primary.focus,
 .btn-primary:focus {
@@ -10972,8 +10972,8 @@ pre code {
   border-radius: 2px;
   background: var(--text-blue);
   color: #fff;
-  font-weight: 600;
-  margin: 0.25em 0.1em;
+  font-weight: 400;
+  margin: 0.5em 0.3em;
   font-size: 1rem;
   border-radius: 4px;
 }
