@@ -10615,6 +10615,7 @@ pre code {
   position: relative;
   height: 100%;
   display: flex;
+  max-width: 2000px;
 }
 .header .header-content {
   color: rgb(0 0 0 / 0%);
@@ -10632,6 +10633,7 @@ pre code {
   margin-right: auto;
   margin-top: 10rem;
 }
+
 .header .header-content .header-subtitle {
   font-weight: 200;
   font-size: calc(20px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
