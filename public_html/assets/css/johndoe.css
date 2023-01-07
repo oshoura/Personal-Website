@@ -10650,10 +10650,11 @@ pre code {
   font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: 40px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 1200px) {
   .header {
     height: 500px;
     min-height: 500px;
+
   }
   .header .header-content .header-mono {
     letter-spacing: 2px;
