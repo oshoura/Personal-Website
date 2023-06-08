@@ -13,7 +13,7 @@ This website was built using a [template](https://dribbble.com/shots/5456980-Mod
 
 ## Outcome
 
-Although, I don't consider myself a front end engineer, I do believe in the importance of knowing a little bit about everything. The main reason I built my website in html and css instead of a no code tool is to gain more exposure and build comfort with web development tools. I improved my skills in:
+The main reason I built my website in html and css instead of a no code tool is to gain more exposure and build comfort with web development tools. I believe in the importance of being a well rounded engineer with knowledge across multiple disciplines. I improved my skills in:
 - html
 - css
 - bootstrap
