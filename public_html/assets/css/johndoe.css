@@ -10983,3 +10983,19 @@ pre code {
   border: 0.1rem solid var(--text-blue);
   color: var(--text-blue);
 }
+
+.certif-image {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.certif-item {
+  text-align: center;
+}
+
+.certif-text {
+  margin-top: 10px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
