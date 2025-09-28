@@ -153,41 +153,21 @@
           <h2>About <span class="text-danger">Me</span></h2>
           <span class="line mb-3"></span>
           <text class="mt-20">
-            I graduated from <strong>Northeastern University</strong> with a degree in Computer Science 
-            with a concentration in <strong>Artificial Intelligence</strong>. Some of my favorite courses were 
-            <strong>Object Oriented Design, Programming Languages, Artificial Intelligence, and Machine Learning.</strong>
+            I'm a full-stack engineer with 2 years of experience, passionate about building impactful, far-reaching software. 
+            I graduated from <strong>Northeastern University</strong> with a degree in Computer Science and have since worked at 
+            Reprise, with previous internships at Capital One and Liberty Mutual.
           </text>
-          <h5 class="mt-3">My Passion</h5>
+          <h5 class="mt-3">My Experience</h5>
           <text class="mt-20">
-            I'm in Software Engineering because I have a strong desire to
-            improve the world through technology.
-            Since I was a child, I loved everything about technology, building
-            my first computer when I was 9 with my dad.
-            Today, I think what sets my apart is my well-roundedness. I'm not
-            just diverse in my technical skillsets,
-            but I am constantly engaged with the business side. I'm confident
-            that I can suceed at any job due to my ability
-            to ask the right questions and learn quickly.
+            At Reprise, I've led significant technical initiatives including our Vue3 platform migration and multiple 
+            architectural improvements that enhanced performance and security. Working closely with product and design teams, 
+            I've delivered high-impact features that drove platform adoption from ~ 30% to ~ 90%. I've also supported Fortune 500 
+            clients by resolving critical issues to maintain $1M+ accounts.
           </text>
-          <h5 class="mt-3">In my free time</h5>
-          <text class="mt-20">I love cooking and I love eating even more, I try new
-            cuisines whenever I can. I also love
-            fitness in general.
-            I do strength training, boxing, brazilian jiu jitsu, and martial
-            arts (I became a blackbelt at 15 years of age). I also love podcasts
-            and audiobooks.
-            I'll occasionally binge a good novel, but mostly, I'll listen to
-            finance, business, tech, self-development.
-            Some of my favorite audiobooks: Freakonomics, Automic Habits, The
-            4-Hour Workweek, and Harry Potter (Deathly Hollows);
-            Podcasts: Motley Fool Money, Pivot, The Firsts.
-            I'm involved in a Muslim Youth Group called Arkanum where I mentor
-            middle school to high school aged kids.
-            I give them Islamic lessons, go out with them in Boston, and even
-            chaperone on overnight retreats.
-            I joined as a mentee 5 years ago, loved the community, and stayed
-            ever since.
-            I also got married in May of 2023 &#128141
+          <h5 class="mt-3">Why I work</h5>
+          <text class="mt-20">
+            I'm excited by roles that intellectually challenge me, leverage my skills in modern web technologies and 
+            full-stack development, and allow me to help build exceptional products that users love.
           </text>
           <!-- <h5 class="mb-3">Looking To The Future</h5>
           <p class="mt-20">
@@ -601,7 +581,7 @@
         <!-- <h4 class="text-light mb-3 font-weight-normal">Download My Resume</h4> -->
         <a
           class="btn btn-primary w-lg"
-          href="./public_html/assets/Resume 2023 - Shoura.pdf"
+          href="https://www.linkedin.com/in/oshoura/"
           target="_blank">Download My Resume</a>
       </div>
 
@@ -620,6 +600,20 @@
         </h5>
         <div class="portfolio">
           <div class="portfolio-container">
+             <div class="col-md-6 col-lg-4 web new">
+              <div class="portfolio-item">
+                <img src="public_html/assets/imgs/projects/spyfall.jpeg" class="img-fluid" alt="Spyfall Game" />
+                <div class="content-holder">
+                  <div class="text-holder">
+                    <h6 class="title">Spyfall</h6>
+                    <p class="subtitle">
+                      A live multiplayer boardgame where your goal is to catch the spy amongst you.
+                      <strong>Vue, Node, WebSockets</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class=" col-lg-6 web new">
               <div class="portfolio-item">
                 <img
@@ -640,6 +634,8 @@
                   </div>
                 </a>
               </div>
+            </div>
+              <div class="col-md-6 col-lg-4 web new">
               <div class="portfolio-item">
                 <img
                   src="public_html/assets/imgs/projects/facial_recog.png"
@@ -800,23 +796,57 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <div class="contact-form-card">
-              <h4 class="contact-title" style="color: rgb(51 71 91)">
+            <div class="contact-form-card dark-contact-card">
+              <h4 class="contact-title dark-contact-title">
                 Send me a message!
               </h4>
-              <!-- Hubspot form -->
-              <script
-                charset="utf-8"
-                type="text/javascript"
-                src="//js.hsforms.net/forms/embed/v2.js"></script>
+              <form id="contact-form" onsubmit="submitForm(event)">
+                <div class="form-group">
+                  <input type="text" class="form-control dark-contact-input" id="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control dark-contact-input" id="phone" placeholder="Phone" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control dark-contact-input" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control dark-contact-input" id="message" rows="4" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary dark-contact-button">Send Message</button>
+                <div id="contact-status" class="dark-contact-status" aria-live="polite"></div>
+              </form>
+
               <script>
-                hbspt.forms.create({
-                  region: "na1",
-                  portalId: "23715100",
-                  formId: "46984d33-127a-4344-9760-cea5b68d9d41",
-                });
+                function submitForm(e) {
+                  e.preventDefault();
+                  
+                  const formData = {
+                    name: document.getElementById('name').value,
+                    phone: document.getElementById('phone').value, 
+                    email: document.getElementById('email').value,
+                    message: document.getElementById('message').value
+                  };
+
+                  const statusEl = document.getElementById('contact-status');
+                  statusEl.textContent = 'Sending...';
+
+                  fetch('https://hooks.zapier.com/hooks/catch/20496425/u1xn08k/', {
+                    method: 'POST',
+                    body: JSON.stringify(formData),
+                    headers: {
+                      'Content-Type': 'application/json'
+                    }
+                  })
+                  .then(() => {
+                    statusEl.textContent = 'Message sent.';
+                    document.getElementById('contact-form').reset();
+                  })
+                  .catch(() => {
+                    statusEl.textContent = 'Error sending message. Please try again.';
+                  });
+                }
               </script>
-              <!---->
             </div>
           </div>
           <div class="col-lg-4">
@@ -863,9 +893,9 @@
                   <h6 class="d-inline">
                     Email :<br />
                     <a
-                      href="mailto:shoura.o@northeastern.edu"
+                      href="mailto:omarshoura1@gmail.com"
                       target="_blank"
-                      class="text-muted">shoura.o@northeastern.edu</a>
+                      class="text-muted">omarshoura1@gmail.com</a>
                   </h6>
                 </div>
               </div>
@@ -885,13 +915,6 @@
                     target="_blank"
                     href="https://www.linkedin.com/in/oshoura/"><i
                       class="ti-linkedin" aria-hidden="true"></i></a>
-                </li>
-                <li class="social-item">
-                  <a
-                    class="social-link text-light"
-                    target="_blank"
-                    href="https://www.fiverr.com/s/5EGrv3"><i
-                      class="ti-yahoo" aria-hidden="true"></i></a>
                 </li>
               </ul>
             </div>

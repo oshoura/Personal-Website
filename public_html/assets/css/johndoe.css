@@ -10697,6 +10697,37 @@ pre code {
 .light-section {
   background-color: var(--bgd-dark-secondary);
 }
+.dark-contact-card {
+  background-color: var(--bgd-dark-secondary) !important;
+  color: var(--light-text) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.dark-contact-title {
+  color: var(--light-text);
+}
+.dark-contact-input {
+  background-color: #1f1f1f;
+  color: var(--light-text);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.dark-contact-input::placeholder {
+  color: rgba(211, 211, 211, 0.6);
+}
+.dark-contact-input:focus {
+  background-color: #242424;
+  color: var(--light-text);
+  border-color: var(--text-blue);
+  box-shadow: 0 0 0 0.2rem rgba(34, 92, 200, 0.15);
+}
+.dark-contact-button {
+  background-color: var(--text-blue);
+  border-color: var(--main-blue);
+}
+.dark-contact-status {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--light-text);
+}
 .about-section .about-card {
   padding: 75px;
   max-width: 1500px;
