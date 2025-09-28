@@ -831,20 +831,16 @@
                   const statusEl = document.getElementById('contact-status');
                   statusEl.textContent = 'Sending...';
 
-                  fetch('https://hooks.zapier.com/hooks/catch/20496425/u1xn08k/', {
+                  fetch('https://hooks.zapier.com/hooks/catch/20496425/u1xn08k/?name=' + formData.name + '&phone=' + formData.phone + '&email=' + formData.email + '&message=' + formData.message, {
                     method: 'POST',
-                    body: JSON.stringify(formData),
                     headers: {
                       'Content-Type': 'application/json'
                     }
                   })
-                  .then(() => {
+                  .finally(() => {
                     statusEl.textContent = 'Message sent.';
                     document.getElementById('contact-form').reset();
                   })
-                  .catch(() => {
-                    statusEl.textContent = 'Error sending message. Please try again.';
-                  });
                 }
               </script>
             </div>
