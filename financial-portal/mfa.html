@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verify · Financial Portal</title>
+    <link rel="stylesheet" href="portal.css" />
+  </head>
+  <body data-page="mfa">
+    <main class="auth">
+      <div class="card">
+        <p class="eyebrow">Financial Portal</p>
+        <h1>Verify</h1>
+        <fieldset class="methods">
+          <legend class="eyebrow">Send a code</legend>
+          <label class="method">
+            <input type="radio" name="method" value="email" checked />
+            <span>Email</span>
+            <strong>oshoura@bridgeinvest.io</strong>
+          </label>
+          <label class="method">
+            <input type="radio" name="method" value="sms" />
+            <span>Text message</span>
+            <strong>6177754868</strong>
+          </label>
+        </fieldset>
+        <button type="button" id="send-code">Send code</button>
+        <p class="sent" id="sent-note" hidden></p>
+        <form id="verify-form" hidden>
+          <label>
+            Code
+            <input id="code" name="code" type="text" autocomplete="one-time-code" required />
+          </label>
+          <p class="error" id="mfa-error" hidden></p>
+          <button type="submit">Continue</button>
+        </form>
+      </div>
+    </main>
+    <script src="portal.js"></script>
+  </body>
+</html>
